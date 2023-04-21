@@ -43,3 +43,17 @@ function slide() {
 // Definindo o intervalo de tempo para mudar os slides (5 segundos)
 setInterval(slide, 3000);
 
+// Script para traduzir o site
+  const translateBtn = document.getElementById("translateEng");
+  const currentLanguage = document.documentElement.lang;
+
+  translateBtn.addEventListener("click", function() {
+    if (currentLanguage === "en") {
+      return; // current language is already English, no need to translate
+    }
+
+    // perform translation
+    const currentUrl = window.location.href;
+    const newUrl = currentUrl.replace(`/${currentLanguage}/`, "/en/");
+    window.location.href = newUrl;
+  });
