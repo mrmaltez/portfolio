@@ -1,0 +1,404 @@
+
+body {
+  background-color: #0f141a;
+  font-family: Courier New;
+  margin: 0;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.493);
+}
+
+header {
+  background-color: #0f141a;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  align-items: center;
+  color: #ccc;
+}
+
+header ul a {
+  color: #ccc;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+main {
+  max-width: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+#inicio {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#inicio img {
+  width: 20rem;
+  margin: auto;
+  position: relative;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+#projetos img {
+max-width: 100%;
+object-fit: contain;
+}
+
+#contato a {
+  color: #323b5c;
+  font-size: 27px;
+}
+
+#habilidades {
+  font-size: 27px;
+  color: #323b5c;
+  
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container-habilidade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ccc;
+}
+
+section p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #ccc;
+  text-align: center;
+}
+
+section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+section li {
+  background-color: #ccc;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 13px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+section li:hover {
+  border: solid #000000 1px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+
+section li h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: #333;
+}
+
+section li p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+footer {
+  background-color: #0f141a;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+
+hr {
+	border-width: 0; 
+	height: 1px;
+	border-top-width: 1px;
+	}
+
+section .button {
+    background: #29304A;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #fff;
+    font-family: Courier New;
+    font-size: 20px;
+    font-weight: 80;
+    padding: 10px;
+    -webkit-box-shadow: 0 1px 20px 0 #000000;
+    -moz-box-shadow: 0 1px 20px 0 #000000;
+    box-shadow: 0 1px 20px 0 #000000;
+    text-shadow: 0 0 20px #000000;
+    border: solid #29304A 0;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 12px;
+ }
+ 
+.button:hover {
+    border: solid #000000 1px;
+    background: #323b5c;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+ }
+
+
+ .carousel {
+  position: relative;
+  margin: 0 auto;
+  max-width: 100vh;
+  height: 600px;
+  overflow: hidden;
+}
+
+.carousel-container {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+}
+
+.carousel-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.carousel-prev {
+  left: 20px;
+}
+
+.carousel-next {
+  right: 20px;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+  color: black;
+}
+
+@media (max-width: 767px) {
+  .carousel {
+    height: 300px;
+  }
+  
+  .carousel-container {
+    width: calc(100% * 2);
+  }
+  
+  .carousel-item {
+    flex: 0 0 calc(100% / 2);
+  }
+}
+
+@media (max-width: 479px) {
+  .carousel {
+    height: 180px;
+  }
+  
+  .carousel-container {
+    width: calc(100% * 1);
+  }
+  
+  .carousel-item {
+    flex: 0 0 100%;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  nav ul {
+    text-align: center;
+  }
+  nav li {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  main {
+    padding: 10px;
+  }
+  #habilidades{
+    font-size: 20px;
+  }
+  #contato{
+    font-size: 20px;
+  }
+  #inicio img {
+    width: 12rem;
+  }
+  section li {
+    padding: 10px;
+  }
+  section li h3 {
+    font-size: 1.2rem;
+  }
+  section li p {
+    font-size: 1rem;
+  }
+  footer {
+    font-size: 0.8rem;
+  }
+  .container-habilidade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
+
+/* Tablet */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 {
+    font-size: 1.8rem;
+  }
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+  nav li {
+    margin-left: 20px;
+    margin-bottom: 0;
+  }
+  main {
+    padding: 20px;
+  }
+  #habilidades{
+    font-size: 20px;
+  }
+  #inicio img {
+    width: 15rem;
+  }
+  section li {
+    padding: 13px;
+  }
+  section li h3 {
+    font-size: 1.3rem;
+  }
+  section li p {
+    font-size: 1.1rem;
+  }
+  footer {
+    font-size: 0.9rem;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1025px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+  nav li {
+    margin-left: 20px;
+    margin-bottom: 0;
+  }
+  main {
+    padding: 20px;
+  }
+  #inicio img {
+    width: 20rem;
+  }
+  section li {
+    padding: 13px;
+  }
+  section li h3 {
+    font-size: 1.5rem;
+  }
+  section li p {
+    font-size: 1.2rem;
+  }
+  footer {
+    font-size: 1rem;
+  }
+}
+
