@@ -57,3 +57,18 @@ setInterval(slide, 3000);
     const newUrl = currentUrl.replace(`/${currentLanguage}/`, "/en/");
     window.location.href = newUrl;
   });
+
+  // Script para traduzir o site
+  const translateEtn = document.getElementById("translateEsp");
+ 
+
+  translateBtn.addEventListener("click", function() {
+    if (currentLanguage === "en") {
+      return; // current language is already English, no need to translate
+    }
+
+    // perform translation
+    const currentUrl = window.location.href;
+    const newUrl = currentUrl.replace(`/${currentLanguage}/`, "/es/");
+    window.location.href = newUrl;
+  });
