@@ -154,7 +154,7 @@ footer {
   color: white;
   text-align: center;
   padding: 10px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 
@@ -164,11 +164,43 @@ hr {
 	border-top-width: 1px;
 	}
 
+
+header button {
+  background: #29304A;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: Courier New;
+    font-size: 15px;
+    font-weight: 80;
+    padding: 10px;
+    -webkit-box-shadow: 0 1px 20px 0 #000000;
+    -moz-box-shadow: 0 1px 20px 0 #000000;
+    box-shadow: 0 1px 20px 0 #000000;
+    text-shadow: 0 0 20px #000000;
+    border: solid #29304A 0;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 12px;
+}
+
+header button:hover {
+  border: solid #000000 1px;
+  background: #323b5c;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
 section .button {
     background: #29304A;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     color: #fff;
     font-family: Courier New;
     font-size: 20px;
@@ -191,7 +223,7 @@ section .button {
     background: #323b5c;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     text-decoration: none;
  }
 
@@ -294,10 +326,10 @@ section .button {
   main {
     padding: 10px;
   }
-  #habilidades{
+  #habilidades {
     font-size: 20px;
   }
-  #contato{
+  #contato {
     font-size: 20px;
   }
   #inicio img {
@@ -319,6 +351,10 @@ section .button {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  header button {
+    font-size: 13px;
   }
   
 }

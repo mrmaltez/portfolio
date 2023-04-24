@@ -43,32 +43,44 @@ function slide() {
 // Definindo o intervalo de tempo para mudar os slides (5 segundos)
 setInterval(slide, 3000);
 
-// Script para traduzir o site
-  const translateBtn = document.getElementById("translateEng");
-  const currentLanguage = document.documentElement.lang;
 
-  translateBtn.addEventListener("click", function() {
-    if (currentLanguage === "en") {
-      return; // current language is already English, no need to translate
-    }
+//Tradução do site
+window.onload=function() {
 
-    // perform translation
-    const currentUrl = window.location.href;
-    const newUrl = currentUrl.replace(`/${currentLanguage}/`, "/en/");
-    window.location.href = newUrl;
-  });
+const translateBtnEng = document.getElementById("translateEng");
+const translateBtnEsp = document.getElementById("translateEsp");
+const translateBtnPor = document.getElementById("translatePor");
+const currentLanguage = document.documentElement.lang;
 
-  // Script para traduzir o site
-  const translateEtn = document.getElementById("translateEsp");
- 
+translateBtnEng?.addEventListener("click", function() {
+  if (currentLanguage === "en") {
+    return; // current language is already English, no need to translate
+  }
 
-  translateBtn.addEventListener("click", function() {
-    if (currentLanguage === "en") {
-      return; // current language is already English, no need to translate
-    }
+  // perform translation
+  const currentUrl = window.location.href;
+  const newUrl = currentUrl.replace(`/${currentLanguage}/`, "/en/");
+  window.location.href = newUrl;
+});
 
-    // perform translation
-    const currentUrl = window.location.href;
-    const newUrl = currentUrl.replace(`/${currentLanguage}/`, "/es/");
-    window.location.href = newUrl;
-  });
+translateBtnEsp?.addEventListener("click", function() {
+  if (currentLanguage === "es") {
+    return; // current language is already Spanish, no need to translate
+  }
+
+  // perform translation
+  const currentUrl = window.location.href;
+  const newUrl = currentUrl.replace(`/${currentLanguage}/`, "/es/");
+  window.location.href = newUrl;
+});
+
+translateBtnPor?.addEventListener("click", function() {
+  if (currentLanguage === "pt") {
+    return; // current language is already Portuguese, no need to translate
+  }
+
+  // perform translation
+  const currentUrl = window.location.href;
+  const newUrl = currentUrl.replace(`/${currentLanguage}/`, "/pt/");
+  window.location.href = newUrl;
+})};
