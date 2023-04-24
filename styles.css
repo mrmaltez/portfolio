@@ -311,6 +311,8 @@ section .button {
   header {
     flex-direction: column;
     text-align: center;
+    justify-content: center;
+    margin-right: 12px;
   }
   header h1 {
     font-size: 1.5rem;
@@ -335,6 +337,7 @@ section .button {
   #inicio img {
     width: 12rem;
   }
+  
   section li {
     padding: 10px;
   }
