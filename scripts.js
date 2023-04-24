@@ -41,7 +41,7 @@ function slide() {
 }
 
 // Definindo o intervalo de tempo para mudar os slides (5 segundos)
-setInterval(slide, 3000);
+setInterval(slide, 5000);
 
 
 //Tradução do site
