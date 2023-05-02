@@ -20,7 +20,9 @@ carouselNext.addEventListener('click', (event) => {
 
 
 // Definindo a função que irá mudar os slides
+
 function slide() {
+
   const firstItem = carousel.querySelector('.carousel-item:first-child');
   const lastItem = carousel.querySelector('.carousel-item:last-child');
   const cloneFirstItem = firstItem.cloneNode(true);
@@ -41,7 +43,7 @@ function slide() {
 }
 
 // Definindo o intervalo de tempo para mudar os slides (5 segundos)
-setInterval(slide, 3000);
+setInterval(slide, 5000);
 
 
 //Tradução do site
